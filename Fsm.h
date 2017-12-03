@@ -16,14 +16,6 @@
 #ifndef FSM_H
 #define FSM_H
 
-
-#if defined(ARDUINO) && ARDUINO >= 100
-  #include <Arduino.h>
-#else
-  #include <WProgram.h>
-#endif
-
-
 struct State
 {
   State(void (*on_enter)(), void (*on_state)(), void (*on_exit)());
